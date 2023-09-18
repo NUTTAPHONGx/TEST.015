@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fieldset</title>
+    <meta charset="utf-8"
+</head>
+
+<body>
+    <body bgcolor="pink"></body>
+    <h1><p align="center">แบบสอบถาม</p></h1>
+    <hr size="3px" noshade>
+    <form action="">
+            Enter username :
+            <input type="text" name="username" maxlength="8"> <br><br>
+            Enter password :
+            <input type="password" name="password" maxlength="12">
+        <fieldset>
+        <h3>ภาษาที่พูดได้</h3>
+   <form action="">
+        <input type="checkbox" name="LNG" value="TH" checked="checked"> ไทย
+        <input type="checkbox" name="LNG" value="EN"> อังกฤษ<br>
+        <input type="checkbox" name="LNG" value="CH"> จีน<br>
+        <input type="checkbox" name="LNG" value="JA"> ญี่ปุ่น<br>
+    </form>
+    <h3>คลิกปุ่มเพื่อยืนยัน</h3>
+    <form action="">
+        <input type="submit" value="Send Data">
+        <input type="reset" value="Clear Form">
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>ข้อมูลการศึกษา</legend><br> ระดับการศึกษา :
+            <select name="eduLevel">
+<option value="centificate">ปวช.</option>
+<option value="diploma">ปวส.</option>
+<option value="bachelor">ปริญญาตรี</option>
+<option value="master">ปริญญาโท</option>
+<option value="doctor">ปริญญาเอก</option>
+</select><br /> จากสถาบัน :
+            <input type="text" size="73"> <br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>ข้อมูลสุขภาพ</legend><br> ส่วนสูง (cm) :
+            <input type="text" name="height" size="5"> น้ำหนัก (kg) :
+            <input type="text" name="weight" size="5"><br> ระบุโรคประจำตัว (ถ้ามี) :
+            <input type="text" name="diesase" size="60"> <br><br>
+        </fieldset>
+    </form>
+    <h3>อัปโหลดไฟล์ภาพ</h3>
+    <form name="example" method="POST" action="" enctype="">
+        ไฟล์รูปภาพ (.jpg) : <input type="file"> <br><br>
+        <input type="submit" value="Send Data"> &nbsp &nbsp
+        <input type="reset" value="Clear Form">
+    </form>
+    <h3>ดรอปดาวน์ลิสต์แบบจัดกลุ่ม</h3>    
+    <form action="">
+        กรุณาเลือกสาขาวิชาเอก :
+        <select name="major">
+
+<optgroup label="คณะวิทยาศาสตร์">
+<option value="Sce1">สาขาวิชาวิทยาการคอมพิวเตอร์</option>
+<option value="SC02">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+<option value="SC03">สาขาวิชามัลติมีเดียประยุกต์</option>
+</optgroup>
+<optgroup label="คณะบริหารธุรกิจ">
+<option value="BA01">สาขาวิชาการบัญชี</option>
+<option value="BA02">สาขาวิชาการตลาด</option>
+<option value="BA03">สาขาวิชาการและโลจิสติกส์</option>
+<option value="BAB4">สาขาวิชาคอมพิวเตอร์ธุรกิจ</option>
+</optgroup>
+<optgroup label="คณะวิศวกรรมศาสตร์">
+<option value="EN1">สาขาวิชาวิศวกรรมไฟฟ้า</option>
+<option value="EN82">สาขาวิชากรรมเครื่องกล</option>
+<option value="EN03">สาขาวิชาการวิศวกรรมโยธา</option>
+<option value="EN04">สาขาวิชาวิศวกรรมคอมพิวเตอร์</option>
+</optgroup>
+</select>
+</body>
+
+</html>
